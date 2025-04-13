@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "1";
+    src: url(fonts/nanum_myeongjo/NanumMyeongjo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "2";
+    src: url(fonts/nanum_gothic/NanumGothic-Regular.ttf);
+}
+
+.main_text {
+    font-family: "1";
+}
+
+.sub_text {
+    font-family: "2";
+}
+
+.soc_med {
+    display: flex;
+    gap: 10px;
+}
+
+.soc_med img {
+    height: 25px;
+}
+
+.soc_med a:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Grouped Logo and Text in NavBar */
+.logo_grouped {
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-items: center;
+
+}
+
+#nav_logo_texts {
+    grid-template-rows: 1fr 1fr;
+    line-height: 15px;
+    margin-left: 8px;
+}
+
+#nav_plp_logo {
+    height: 50px;
+}
+
+#plp_nav_main_text,
+#plp_nav_sub_text {
+    font-size: 14px;
+    text-wrap: nowrap;
+}
+
+/* Upper Part of NavBar: SocMed, SchoolBrand, Button */
+#nav_upper_part {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+/* The UL Group of Nav Items */
+#nav_items {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+#nav_items li {
+    font-family: "2";
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#inq_btn {
+    background-color: #00412d;
+    font-family: "2";
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* The Whole NavBar */
+nav {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Video Container of PLP */
+#video_container {
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+}
+
+/* Actual Video Element */
+#main_plp_vid {
+    width: 100vw;
+    height: 69vh;
+    object-fit: cover;
+    filter: brightness(20%);
+}
+
+.video_text {
+    font-family: "1";
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#vid_text_container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 1;
+}
+
+#vid_welcome_text {
+    font-size: 16px;
+}
+
+#vid_plp_text {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "1";
+}
+
+h4 {
+    font-family: "1";
+}
+
+p {
+    font-family: "2";
+}
+
+hr {
+    width: 80%;
+    border: 0.5px solid gray;
+    margin: auto;
+}
