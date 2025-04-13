@@ -42,7 +42,13 @@
         <!-- Unordered List of Navigation Items -->
         <hr>
         <ul id="nav_items">
-            <li>Home</li>
+            <?php
+            if (isset($_GET['userText']) && !empty($_GET['userText'])) {
+                echo "<li>" . htmlspecialchars($_GET['userText']) . "</li>";
+            } else {
+                echo "<li>No input received.</li>";
+            }
+            ?>
             <li>About</li>
             <li>Admission</li>
             <li>Academics</li>
